@@ -1,0 +1,31 @@
+#asdf {
+	background-color: red;
+}
+.about{
+	border: 5px solid black;
+	margin: 30px;
+	padding: 30px;
+}
+.resume{
+	list-style: none;
+}
+
+#Educ .collapsed {
+	background-color: blue;
+}
+
+#Educ .expanded{
+	background-color: purple;
+}
+#WorkEx:before {   
+    content: "";  
+    border-color: transparent #008eef;  
+    border-style: solid;  
+    border-width: 0.35em 0 0.35em 0.45em;  
+    display: block;  
+    height: 0;  
+    width: 0;  
+    left: -1em;  
+    top: 0.9em;  
+    position: relative;  
+} 

@@ -15,11 +15,64 @@
 # limitations under the License.
 #
 import webapp2
+import os
+import logging
+import jinja2
+
+JINJA_ENVIRONMENT= jinja2.Environment(
+	loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
+	extensions=['jinja2.ext.autoescape'],
+	autoescape=True)
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+    	if self.request.path == '/home.html':
+        	dic = {
+        		'title': 'Home',
+        		'header': 'Welcome',
+        		'path': self.request.path
+        	}
+        elif self.request.path == '/personal.html':
+        	dic = {
+        		'title': 'Personal',
+        		'header': 'Personal',
+        		'path': self.request.path
+        	}
+        elif self.request.path == '/school.html':
+        	dic = {
+        		'title': 'Family',
+        		'header': 'Family',
+        		'path': self.request.path
+        	}
+        elif self.request.path == '/resume.html':
+        	dic = {
+        		'title': 'Family',
+        		'header': 'Family',
+        		'path': self.request.path
+        	}
+        else:
+        	self.response.write(template.render('This should not occur'))
+        	return
 
+        template = JINJA_ENVIRONMENT.get_template('templates' + self.request.path)
+    	self.response.write(template.render(dic))
+
+
+class HomeHandler(webapp2.RequestHandler):
+	def get(self):
+		logging.info("asdf")
+		template=JINJA_ENVIRONMENT.get_template('templates/home.html')
+		dic= {
+			'title':'Home',
+			'header':'Welcome',
+			'path':'/home.html'
+			}
+		self.response.write(template.render(dic))
+		
 app = webapp2.WSGIApplication([
-    ('/', MainHandler)
-], debug=True)
+    ('/', HomeHandler),
+    ('/home.html', MainHandler),
+    ('/personal.html',MainHandler),
+    ('/school.html', MainHandler),
+    ('/resume.html',MainHandler),
+], debug = True)

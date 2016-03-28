@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+	<head>
+		<meta charset= "UTF-8">
+		<title>{{title}}</title>
+
+		<!-- Bootstrap Core CSS -->
+    	<link href="static/css/bootstrap.min.css" rel="stylesheet"/>
+
+    	<link href="static/css/style.css" rel="stylesheet"/>
+	</head>	
+	<body>
+		<header>
+			<h1>Joanna Weingast</h1>
+			<h2>{{header}}</h2>
+			<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		      <div class="container">
+<!-- 		        <div id="navbar" class="navbar-collapse collapse">
+ -->		          <ul class="nav nav-justified nav-tabs">
+		            <li class="active">
+		            	<a href="#">Home</a>
+		            </li>
+		            <li>
+		            	<a href="/personal.html">Personal</a>
+		            </li>
+		            <li>
+		            	<a href="/school.html">School</a>
+		            </li>
+		            <li>
+		            	<a href="/resume.html">Resume</a>
+		          </ul>
+<!-- 		        </div><!--/.nav-collapse -->
+ -->		      </div>
+		    </nav>
+<!--
+			<nav>
+				<a href= '/home.html'>
+				{% if path == "/home.html" %}
+				HOME</a>
+				{% else %}
+				Home</a>
+				{% endif %}
+				
+				<a href="food.html">
+				{% if path == "/food.html" %}
+				FOOD</a>
+				{% else %}
+				Food</a>
+				{% endif %}
+				
+				<a href="family.html">
+				{% if path == "/family.html" %}
+				FAMILY</a>
+				{% else %}
+				Family</a>
+				{% endif %}
+
+				<a href="login.html">
+				{% if path == "/login.html" %}
+				LOGIN</a>
+				{% else %}
+				Login</a>
+				{% endif %}
+			</nav>
+
+-->
+		</header>
+
+		{% block content %}
+
+		{% endblock %}
+
+		<!-- Bootstrap Core JavaScript -->
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    	<script src="static/js/bootstrap.min.js"></script>
+    	<script src="static/js/style.js"></script>
+
+		<footer>
+			<p>Copyright &copy; Joanna Weingast- student at the <a href= 'http://www.umich.edu'>University of Michigan</a></p>
+		</footer>
+	</body>
+</html>
