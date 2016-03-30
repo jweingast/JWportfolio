@@ -3,5 +3,7 @@
 {% block content %}
 <h1>About Me!</h1>
 	<p class="about"> I grew up in a small </p>
-<img src= "static/family.JPG" alt= "Family Picture" width= "525px">
+	<a onclick="prev_pic()">click me</a>
+	<img src= "static/family.JPG" alt= "Family Picture" width= "525px" id='display_photo'>
+	<img src="" onclick="next_pic()"/>
 {% endblock %}	

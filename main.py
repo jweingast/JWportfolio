@@ -50,6 +50,12 @@ class MainHandler(webapp2.RequestHandler):
         		'header': 'Family',
         		'path': self.request.path
         	}
+        elif self.request.path == '/contact.html':
+            dic = {
+                'title': 'Family',
+                'header': 'Family',
+                'path': self.request.path
+            }
         else:
         	self.response.write(template.render('This should not occur'))
         	return
@@ -75,4 +81,5 @@ app = webapp2.WSGIApplication([
     ('/personal.html',MainHandler),
     ('/school.html', MainHandler),
     ('/resume.html',MainHandler),
+    ('/contact.html',MainHandler),
 ], debug = True)
