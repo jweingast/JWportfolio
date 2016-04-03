@@ -68,3 +68,22 @@ details li {
 summary {
     font-weight: bold;
 }
+
+#prev_button{
+    display:inline;
+    width: 10%;
+}
+
+#next_button{
+    display: inline;
+    width: 10%;
+}
+
+#display_photo{
+    display: inline;
+}
+
+.slideshow {
+    margin: auto;
+    width: 70%;
+}

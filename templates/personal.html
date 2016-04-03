@@ -3,7 +3,14 @@
 {% block content %}
 <h1>About Me!</h1>
 	<p class="about"> I grew up in a small </p>
-	<a onclick="prev_pic()">click me</a>
-	<img src= "static/family.JPG" alt= "Family Picture" width= "525px" id='display_photo'>
-	<img src="" onclick="next_pic()"/>
-{% endblock %}	
+	<div class='slideshow'>
+		<img src="/static/images/left.png" onclick= "prev_pic()" id="prev_button" style= "visibility: hidden;"/>
+		<img src= "/static/images/1.jpg" width= "525px" id='display_photo'>
+		<img src="/static/images/right.png" onclick="next_pic()" id="next_button"/>
+	</div>
+
+
+<!--<div id='map'></div>	
+		<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+{% endblock %}	-->
