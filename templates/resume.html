@@ -2,6 +2,7 @@
 
 {% block content %}
 <div id= "Resume">
+	<div id= "All">
 	<h3>Education</h3>
 	<ul id="Educ">
 		<details>
@@ -73,9 +74,10 @@
 			<li>Tutor high school students for the SAT once a week at a high school in Detroit</li>
 		</details>
 	</ul>
-	<hr>
+</div>
+	<div id= "Skills">
 	<h3>Skills</h3>
-	<ul id= "Skills">
+	<ul>
 		<details>
 			<summary>Proficient in:</summary>
 			<li>Python</li>
@@ -91,19 +93,9 @@
 			<li>Twitter</li>
 		</details>
 	</ul>
+	</div>
 
-<a href="/static/Resume.pdf" target= "blank">
-	<img class="img-responsive center-left"
-	src= "/static/images/resume.png" alc= "Joanna's Resume">
+<a class= "Res" href="/static/Resume.pdf">
+	<img src= "/static/images/resume-button.png" alt= "My Resume">
 </a>
-<!--To download to computer = link to doc -->
-
-
-
-
-
-
-
-
-<img src= "static/family.JPG" alt= "Family Picture" width= "525px">
 {% endblock %}	

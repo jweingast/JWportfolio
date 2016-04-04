@@ -38,12 +38,7 @@ class MainHandler(webapp2.RequestHandler):
         		'header': 'Personal',
         		'path': self.request.path
         	}
-        elif self.request.path == '/school.html':
-        	dic = {
-        		'title': 'Family',
-        		'header': 'Family',
-        		'path': self.request.path
-        	}
+
         elif self.request.path == '/resume.html':
         	dic = {
         		'title': 'Family',
@@ -79,7 +74,6 @@ app = webapp2.WSGIApplication([
     ('/', HomeHandler),
     ('/home.html', MainHandler),
     ('/personal.html',MainHandler),
-    ('/school.html', MainHandler),
     ('/resume.html',MainHandler),
     ('/contact.html',MainHandler),
 ], debug = True)

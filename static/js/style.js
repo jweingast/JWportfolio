@@ -23,7 +23,7 @@ next_pic = function(){
     var name = temp[temp.length - 1].split('.')[0];
 
     var num = Number(name) + 1
-    if (num == 3) {
+    if (num == 9) {
         document.getElementById("next_button").style = "visibility: hidden;";
     }
     else{

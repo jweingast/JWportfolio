@@ -86,18 +86,23 @@ summary {
     width: 70%;
 }
 #Resume {
-    margin: 50px;
+    margin: 100px;
+    background-color: white;
+    color: #447DBA;
 }
 .navtitle{
     text-align: center;
     color: white;
     position:relative;
     top:30px;
-    margin-left: 400px;
-    margin-right: 400px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-bottom: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-image: url("/static/images/clouds.jpg");
+    border-radius: 40%;
 }
 .navtitle h1{
     font-size: 60px;
@@ -118,4 +123,25 @@ summary {
 .pic {
     border-radius: 20%;
     text-align: center;
+}
+
+.footer {
+    font-family: "Avantgarde", sans-serif; 
+    font-size: 20px;
+    color: black;
+    text-align: center;
+
+}
+.slideshow{
+    text-align: center;
+}
+
+#Skills{
+    float: right;
+    display: inline;
+}
+
+#All {
+    float: left;
+    display: inline;
 }

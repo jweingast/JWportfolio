@@ -42,12 +42,6 @@
 			            	<a href="/personal.html">Personal</a>
 			            </li>
 			            <li
-			            	{% if path == "/school.html" %}
-			            		class="active"
-		            		{% endif %} >
-			            	<a href="/school.html">School</a>
-			            </li>
-			            <li
 			            	{% if path == "/resume.html" %}
 			            		class="active"
 		            		{% endif %} >
@@ -106,9 +100,24 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     	<script src="static/js/bootstrap.min.js"></script>
     	<script src="static/js/style.js"></script>
-
-		<footer>
-			<p>Copyright &copy; Joanna Weingast- student at the <a href= 'http://www.umich.edu'>University of Michigan</a></p>
-		</footer>
-	</body>
+    </body>
+<footer class="footer">
+      <div class="container">
+        <p class="text-muted"><p>Find me on Social Media!</p>
+			<a href= "https://www.facebook.com/jdw0796">
+				<img src= "/static/images/facebook.png" alt= "Facebook" style= "width: 60px">
+			</a>
+			<a href= "https://www.instagram.com/joweingast">
+				<img src= "/static/images/instagramlogo.png" alt= "Instagram" style= "width: 60px">
+			</a>
+			<a href= "https://www.linkedin.com/in/joanna-weingast-493693104">
+				<img src= "/static/images/linkedIn-logo.png" alt= "LinkedIn" style = "width: 60px">
+			</a>
+			<a href= "https://github.com/jweingast">
+				<img src= "/static/images/github.png" alt= "GitHub" style= "width: 60px">
+			</a>
+			<p>Copyright &copy; Joanna Weingast 2016</p></p>
+      </div>
+    </footer>
+  </body>
 </html>
