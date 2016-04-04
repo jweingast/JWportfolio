@@ -47,7 +47,7 @@ class MainHandler(webapp2.RequestHandler):
         	}
         elif self.request.path == '/contact.html':
             dic = {
-                'title': 'Family',
+                'title': 'Contact',
                 'header': 'Family',
                 'path': self.request.path
             }

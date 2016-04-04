@@ -85,29 +85,29 @@ summary {
     margin: auto;
     width: 70%;
 }
-#Resume {
-    margin: 100px;
-    background-color: white;
-    color: #447DBA;
-}
+
 .navtitle{
     text-align: center;
-    color: white;
-    position:relative;
-    top:30px;
+    color: #2563AB;
+    background-color: #FFFFFF;
+}
+.header{
+    text-align: center;
+    top: 30px;
     margin-left: 300px;
     margin-right: 300px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     padding-bottom: 30px;
     padding-top: 30px;
-    background-image: url("/static/images/clouds.jpg");
-    border-radius: 40%;
+    padding-left: 30px;
+    padding-right: 30px;
 }
-.navtitle h1{
+
+.header h1{
     font-size: 60px;
 }
-.navtitle h2{
+.header h2{
     font-style: italic;
 }
 .sky {
@@ -127,21 +127,43 @@ summary {
 
 .footer {
     font-family: "Avantgarde", sans-serif; 
-    font-size: 20px;
     color: black;
-    text-align: center;
-
 }
 .slideshow{
     text-align: center;
 }
-
-#Skills{
-    float: right;
-    display: inline;
+.restitle{
+    text-align: center;
+    color: white;
+    background-image:url('/static/images/clouds.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
 }
 
-#All {
+
+#all {
+    display: inline-block;
     float: left;
-    display: inline;
+    width: 40%;
+    margin-left: 20%;
+    margin-top: 5%;
+    color: #2563AB;
+}
+
+#skills{
+    display: inline-block;
+    float: right;
+    width: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    color: #2563AB;
+}
+#myres{
+    text-align: center;
+    color: #2563AB;
+}
+
+.footer .container .text-muted {
+    text-align: center;
 }
